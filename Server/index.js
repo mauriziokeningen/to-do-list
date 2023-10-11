@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://coronareyesmauricio20:5vg8mxv02aaNPTjC@cluster0.1bhamwa.mongodb.net/test')
+mongoose.connect('mongodb+srv://coronareyesmauricio20:OkE1i3VQDv1BaXSx@cluster0.1bhamwa.mongodb.net/test')
 
 app.post('/add', (req, res) => {
     const task = req.body.task;
@@ -17,6 +17,6 @@ app.post('/add', (req, res) => {
     .catch(err => res.json(err))
 })
 
-app.listen(1001, ()=> {
+app.listen(3001, ()=> {
     console.log("Server is Running")
 })
